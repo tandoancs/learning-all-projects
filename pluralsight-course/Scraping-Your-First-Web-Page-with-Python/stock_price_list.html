@@ -1,0 +1,1357 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Bảng gi&#225; trực tuyến TVSI</title>
+    <!-- thư viện js và font fontawesome -->
+    <link rel="stylesheet" href="/Content/fontawesome/css/all.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="/Content/site.css?v=6.9.21">
+    <link rel="shortcut icon" href="/Content/img/circle.png?v=6.9.21" />
+
+    <link href="/Scripts/SweetAlert/sweetalert2.css" rel="stylesheet" />
+
+    
+    <script src="/Scripts/jquery.min.js"></script>
+    <script src="/Scripts/SweetAlert/sweetalert2.js?v=6.9.21"></script>
+    <script type="text/javascript" src="/Scripts/ultil.js?v=6.9.21"></script>
+    
+    <script src="/Scripts/Highchart/highstock.min.js"></script>
+    <script src="/Scripts/Highchart/drag-panel.js"></script>
+    
+    
+    <script src="/Scripts/jquery-ui.js"></script>
+    <script src="/Scripts/lz-string.min.js"></script>
+    <script type="text/javascript">
+        window.__username = '';
+        window.arrIndexStatic = ["HSX", "HNX", "VN30", "VNA", "UPCOM"];
+        window.dateServer = ConvertStringToDate("20/11/2024");
+        window.linkUrlChartTech = '';
+        window.col1 = 'Lịch sử khớp lệnh';
+        window.col2 = 'Bước giá';
+        window.col3 = 'Giá bán';
+        window.col4 = 'Giá mua';
+        window.col5 = 'Kl bán';
+        window.col6 = 'KL mua';
+        window.col7 = 'Thời gian';
+        window.col8 = 'Thay đổi';
+        window.col9 = 'KL tích lũy';
+        window.col10 = 'KL';
+        window.col11 = 'Giá';
+        window.col12 = 'Biểu đồ kỹ thuật';
+    </script>
+    <script src="/Scripts/LoaddingJs.js"></script>
+</head>
+<body>
+    
+<script type="text/javascript">
+    var languageVI = "VI-VN";
+    var languageEN = "EN-GB";
+    var cookieLanguage = 'VI-VN';
+
+    function currentOnLanguageVI() {
+        if (cookieLanguage === languageVI) return true;
+        return false;
+    }
+
+</script>
+
+    <script type="text/javascript">
+    
+
+	 
+</script>
+
+    <div class="wrapper">
+        <div class="fixed-head">
+            <div>
+                
+<style>
+    .hide-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #808080;
+    }
+
+        .hide-img:hover {
+            cursor: pointer;
+            color: red;
+        }
+</style>
+
+<script>
+    $(".hide-img").each(function () {
+        $(this).click(() => hideTopBox());
+    });
+    //function HideBanner() {
+    //    $(".header").addClass("display-none");
+    //    $(".chart-toggle").find("span").removeClass("btn-up");
+    //    $(".chart-toggle").attr("data-currentLv", "1");
+    //    $(".content-container").removeClass("pulled-middle").removeClass("pulled-top").addClass("pulled-up");
+    //}
+</script>
+                <div class="top-container">
+                    <style>
+    .info-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        flex-wrap: wrap;
+        font-size: 12.5px;
+    }
+
+        .info-index > div {
+            flex: 1;
+            align-self: center;
+        }
+
+        .info-index .span-txt {
+            padding: 0 2px;
+        }
+</style>
+<div class="charts-wrapper d-flex" id="tblIndexInfo">
+    
+    
+    <div class="chart-box-item">
+        
+        <div class="chart-box-img chart-nvsid" id="HSX_IndexChart">
+        </div>
+        <div class="info-index">
+            <div class="d-flex">
+                <span data-displaycolor="HSX_color">VNINDEX</span>
+                <span data-displaycolor="HSX_color" class="color5 number span-txt   index-ico" id="HSX_index">-</span>
+                <span data-displaycolor="HSX_color" class="color5 number span-txt">(<span id="HSX_indexChange"></span>&nbsp;&nbsp;<span id="HSX_pctChange"></span><span>&#37;</span>)</span>
+            </div>
+            <div class="d-flex">
+                <span class="number span-txt" id="HSX_nmTotalQtty">-</span>(CP)
+                <span class="number span-txt" id="HSX_nmTotalValue">-</span>(Tỷ VNĐ)
+            </div>
+            <div class="d-flex">
+                <span class="sp-arrowup"></span>
+                <span class="arrowup number span-txt" id="HSX_up">-</span>
+                <span class="sp-square"></span>
+                <span class="square number span-txt" id="HSX_nochange">-</span>
+                <span class="sp-arrowdown"></span>
+                <span class="arrowdown number span-txt" id="HSX_down">-</span>
+                <span class="number span-txt" id="HSX_mk_status">-</span>
+            </div>
+        </div>
+    </div>
+    <div class="chart-box-item">
+        
+        <div class="chart-box-img chart-nvsid" id="HNX_IndexChart">
+        </div>
+        <div class="info-index">
+            <div class="d-flex">
+                <span data-displaycolor="HNX_color">HNX</span>
+                <span data-displaycolor="HNX_color" class="color5 number span-txt   index-ico" id="HNX_index">-</span>
+                <span data-displaycolor="HNX_color" class="color5 number span-txt">(<span id="HNX_indexChange"></span>&nbsp;&nbsp;<span id="HNX_pctChange"></span><span>&#37;</span>)</span>
+            </div>
+            <div class="d-flex">
+                <span class="number span-txt" id="HNX_nmTotalQtty">-</span>(CP)
+                <span class="number span-txt" id="HNX_nmTotalValue">-</span>(Tỷ VNĐ)
+            </div>
+            <div class="d-flex">
+                <span class="sp-arrowup"></span>
+                <span class="arrowup number span-txt" id="HNX_up">-</span>
+                <span class="sp-square"></span>
+                <span class="square number span-txt" id="HNX_nochange">-</span>
+                <span class="sp-arrowdown"></span>
+                <span class="arrowdown number span-txt" id="HNX_down">-</span>
+                <span class="number span-txt" id="HNX_mk_status">-</span>
+            </div>
+        </div>
+    </div>
+    <div class="chart-box-item">
+        
+        <div class="chart-box-img chart-nvsid" id="VN30_IndexChart">
+        </div>
+        <div class="info-index">
+            <div class="d-flex">
+                <span data-displaycolor="VN30_color">VN30</span>
+                <span data-displaycolor="VN30_color" class="color5 number span-txt   index-ico" id="VN30_index">-</span>
+                <span data-displaycolor="VN30_color" class="color5 number span-txt">(<span id="VN30_indexChange"></span>&nbsp;&nbsp;<span id="VN30_pctChange"></span><span>&#37;</span>)</span>
+            </div>
+            <div class="d-flex">
+                <span class="number span-txt" id="VN30_nmTotalQtty">-</span>(CP)
+                <span class="number span-txt" id="VN30_nmTotalValue">-</span>(Tỷ VNĐ)
+            </div>
+            <div class="d-flex">
+                <span class="sp-arrowup"></span>
+                <span class="arrowup number span-txt" id="VN30_up">-</span>
+                <span class="sp-square"></span>
+                <span class="square number span-txt" id="VN30_nochange">-</span>
+                <span class="sp-arrowdown"></span>
+                <span class="arrowdown number span-txt" id="VN30_down">-</span>
+                <span class="number span-txt" data-marketstatus="HSX_mk_status">-</span>
+            </div>
+        </div>
+    </div>
+    <div class="chart-box-item">
+        
+        <div class="chart-box-img chart-nvsid" id="VNA_IndexChart">
+        </div>
+        <div class="info-index">
+            <div class="d-flex">
+                <span data-displaycolor="VNA_color">VNALL</span>
+                <span data-displaycolor="VNA_color" class="color5 number span-txt   index-ico" id="VNA_index">-</span>
+                <span data-displaycolor="VNA_color" class="color5 number span-txt">(<span id="VNA_indexChange"></span>&nbsp;&nbsp;<span id="VNA_pctChange"></span><span>&#37;</span>)</span>
+            </div>
+            <div class="d-flex">
+                <span class="number span-txt" id="VNA_nmTotalQtty">-</span>(CP)
+                <span class="number span-txt" id="VNA_nmTotalValue">-</span>(Tỷ VNĐ)
+            </div>
+            <div class="d-flex">
+                <span class="sp-arrowup"></span>
+                <span class="arrowup number span-txt" id="VNA_up">-</span>
+                <span class="sp-square"></span>
+                <span class="square number span-txt" id="VNA_nochange">-</span>
+                <span class="sp-arrowdown"></span>
+                <span class="arrowdown number span-txt" id="VNA_down">-</span>
+                <span class="number span-txt" data-marketstatus="HSX_mk_status">-</span>
+            </div>
+        </div>
+    </div>
+    <div class="chart-box-item">
+        
+        <div class="chart-box-img chart-nvsid" id="UPCOM_IndexChart">
+        </div>
+        <div class="info-index">
+            <div class="d-flex">
+                <span data-displaycolor="UPCOM_color">UPCOM</span>
+                <span data-displaycolor="UPCOM_color" class="color5 number span-txt index-ico" id="UPCOM_index">-</span>
+                <span data-displaycolor="UPCOM_color" class="color5 number span-txt">(<span id="UPCOM_indexChange"></span>&nbsp;&nbsp;<span id="UPCOM_pctChange"></span><span>&#37;</span>)</span>
+            </div>
+            <div class="d-flex">
+                <span class="number span-txt" id="UPCOM_nmTotalQtty">-</span>(CP)
+                <span class="number span-txt" id="UPCOM_nmTotalValue">-</span>(Tỷ VNĐ)
+            </div>
+            <div class="d-flex">
+                <span class="sp-arrowup"></span>
+                <span class="arrowup number span-txt" id="UPCOM_up">-</span>
+                <span class="sp-square"></span>
+                <span class="square number span-txt" id="UPCOM_nochange">-</span>
+                <span class="sp-arrowdown"></span>
+                <span class="arrowdown number span-txt" id="UPCOM_down">-</span>
+                <span class="number span-txt" id="UPCOM_mk_status">-</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+
+                <div class="suff-nav">
+                    
+
+
+
+<style>
+    #tabHotrend[data-response="0"]:before {
+        position: absolute;
+        bottom: 28px;
+        /* border: 1px solid; */
+        left: 25px;
+        z-index: 101;
+        padding: 5px;
+        background-color: #2f2f2f;
+        width: 200px;
+        text-align: center;
+        color: #d68b1a;
+        font-style: italic;
+        content: attr(data-note);
+    }
+
+    #tabHotrend[data-note]:before, #tabHotrend[data-note]:after {
+        visibility: hidden;
+        /*opacity: .9;*/
+    }
+
+    #tabHotrend[data-response="0"]:after {
+        position: absolute;
+        content: " ";
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+        bottom: 20px;
+        right: 13px;
+        z-index: 101;
+        border-top: 8px solid #2f2f2f;
+        border-bottom: 0;
+        border-right: 8px solid rgba(0, 0, 0, 0);
+        border-left: 7px solid rgba(0, 0, 0, 0);
+    }
+
+    #tabHotrend[data-response="1"]:before {
+        position: absolute;
+        top: 28px;
+        /* border: 1px solid; */
+        left: 25px;
+        z-index: 101;
+        padding: 5px;
+        background-color: #2f2f2f;
+        width: 200px;
+        text-align: center;
+        color: #d68b1a;
+        font-style: italic;
+        content: attr(data-note);
+    }
+
+    #tabHotrend[data-response="1"]:after {
+        position: absolute;
+        content: " ";
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+        top: 20px;
+        bottom: 0;
+        right: 13px;
+        z-index: 101;
+        border-bottom: 8px solid #2f2f2f;
+        border-top: 0;
+        border-right: 8px solid rgba(0, 0, 0, 0);
+        border-left: 7px solid rgba(0, 0, 0, 0);
+    }
+
+    #tabHotrend[data-note]:hover:after, #tabHotrend[data-note]:hover:before {
+        visibility: visible;
+        /*opacity: .9;*/
+    }
+
+    .span_cata {
+        float: left;
+        width: 170px;
+    }
+
+    .showlist {
+        margin-top: 92px;
+    }
+</style>
+<input type="hidden" id="tabActive" data-typeTab="OFF" />
+<div class="nav a-item-center">
+    <div class="secondary d-flex" style="margin-left: 0;padding-right: 10px">
+        <span class="btn btn-ghi chart-toggle" data-currentLv="0">
+            <span class="btn-up"><i class="fa fa-chevron-up"></i><i class="fas fa-chevron-down"></i></span>
+        </span>
+    </div>
+    <div id="container-tab-all" class="d-flex">
+        <div class="search-box" id="boxSearchStock">
+            <div class="div-search">
+                <input type="text" id="txtSearchSymbol" placeholder="Nhập mã CK" />
+                <span id="btnSearch" class="search-symbol">
+                    <i class="fas fa-search "></i>
+                </span>
+            </div>
+        </div>
+
+            <div class="d-flex">
+                <div class="btn btn-ghi cboDiv" id="tabFavorites">
+                    <span>
+                        <label> Tổng hợp</label>
+                    </span>
+                </div>
+            </div>
+
+        <ul class="d-flex div-container-cbo" id="tabMarket">
+            <li class="btn btn-ghi cboDiv" id="menuHsx" data-href="defaultTab">
+                <label> HOSE</label>
+                <i class="fas fa-caret-down"></i>
+                <div class="div-ul">
+                    <ul class="cbo-child-container">
+                        <li id="defaultTab" class="cbo-li" data-url="HSX">
+                            <span> HOSE </span>
+                        </li>
+                        <li class="cbo-li" data-url="VN30">
+                            <span>VN30 </span>
+                        </li>
+                        <li class="cbo-li" data-url="PO-HSX">
+                            <span> Lô lẻ </span>
+                        </li>
+                        
+                        <li class="cbo-li" data-url="/get-view-gdtt" data-tab="HSX" data-lastt="GDTT">
+                            <span>Giao dịch thỏa thuận </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="btn btn-ghi cboDiv" id="menuHnx" data-href="defaultHnx">
+                <label> HNX</label>
+                <i class="fas fa-caret-down"></i>
+                <div class="div-ul">
+                    <ul class="cbo-child-container">
+                        <li class="cbo-li" data-url="HNX" id="defaultHnx">
+                            <span> HNX </span>
+                        </li>
+                        <li class="cbo-li" data-url="PO-HNX">
+                            <span> Lô lẻ </span>
+                        </li>
+                        <li class="cbo-li" data-url="HNX30">
+                            <span>HNX30 </span>
+                        </li>
+                        <li class="cbo-li" data-url="/get-view-gdtt" data-tab="HNX">
+                            <span> Giao dịch thỏa thuận </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="btn btn-ghi cboDiv" id="menuUpc" data-href="defaultUpc">
+                <label> UPCOM</label>
+                <i class="fas fa-caret-down"></i>
+                <div class="div-ul">
+                    <ul class="cbo-child-container">
+                        <li class="cbo-li" data-url="UPCOM" id="defaultUpc">
+                            <span> UPCOM </span>
+                        </li>
+                        <li class="cbo-li" data-url="PO-UPCOM">
+                            <span> Lô lẻ </span>
+                        </li>
+                        <li class="cbo-li" data-url="/get-view-gdtt" data-tab="UPCOM">
+                            <span> Giao dịch thỏa thuận </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <ul class=" d-flex div-container-cbo" id="tabIndustries">
+            <li class="btn btn-ghi cboDiv">
+                <label> Theo ngành</label>
+                <i class="fas fa-caret-down"></i>
+                <div class="div-ul">
+                    <div class="cbo-child-container indus-split">
+                        <ul id="containerIndustries-1"></ul>
+                        <ul id="containerIndustries-2"></ul>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+        <div class="d-flex div-container-tab">
+            <div class="btn btn-ghi cboDiv" id="tabHotrend" data-response="0" data-note="Top 50 cổ phiếu có Tổng khối lượng khớp lệnh lớn nhất cả 3 sàn">
+                <span>
+                    <label>Hottrend</label>
+                </span>
+            </div>
+        </div>
+        <div class="d-flex div-container-tab">
+            <div class="btn btn-ghi cboDiv" id="tabWarranty">
+                <span>
+                    <label> Chứng quyền</label>
+                </span>
+            </div>
+        </div>
+        <div class="d-flex div-container-tab">
+            <div class="btn btn-ghi cboDiv" id="tabTraiphieu">
+                <span>
+                    <label>Trái phiếu</label>
+                </span>
+            </div>
+        </div>
+    </div>
+    <ul class="d-flex div-container-cbo" id="tabDerivative">
+        <li class="btn btn-ghi cboDiv">
+            <label> Phái sinh</label>
+            <i class="fas fa-caret-down"></i>
+            <div class="div-ul">
+                <ul class="cbo-child-container">
+                    <li class="cbo-li" data-tab="VN30-D">
+                        <span>HĐTL chỉ số VN30 </span>
+                    </li>
+                    <li class="cbo-li" data-tab="VGB5|VGB10-D">
+                        <span> HĐTL TPCP </span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="d-flex div-container-cbo" id="divExpand">
+        <li class="btn btn-ghi cboDiv">
+            <label> Mở rộng</label>
+            <i class="fas fa-caret-down"></i>
+            <div class="div-ul">
+                <ul class="cbo-child-container">
+                    <li class="cbo-li" data-url="/get-view-all-index">
+                        <span> Chỉ số Index </span>
+                    </li>
+                    <li class="cbo-li" data-url="/Content/FileDownload/Huong_dan_su_dung_PriceVIP.pdf" data-file="true">
+                        <span>Hướng dẫn sử dụng</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+
+    <div class="vnds-clock">
+        <div id="market_status" class="d-flex">
+            <div class="market-status mar-10 display-none">
+                HOSE<span class="status" id="HSX_mk_status"></span>
+            </div>
+            <div class="market-status mar-10 display-none">
+                HNX<span class="status" id="HNX_mk_status"></span>
+            </div>
+        </div>
+        
+        <span class="date" id="clock-date">-</span>
+        <span class="digital-clock" id="clock-time">-</span>
+    </div>
+    <div>
+        <ul class="secondary d-flex" id="toolPrice">
+            <li id="setUpColumn" data-response="0" class="setup-li btn btn-ghi">
+                <i class="fas fa-cog" aria-hidden="true"></i>
+                <div class="setupContainer">
+                    <ul class="ul-setup">
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colSubSymbol" checked />
+                            <label>Mã CK</label>
+                        </li>
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colBidQttyTotal" checked />
+                            <label>Bán - KL4+</label>
+                        </li>
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colOffQttyTotal" checked />
+                            <label>Mua - KL4+</label>
+                        </li>
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colTotalBuy" checked />
+                            <label>Tổng KL</label>
+                        </li>
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colNNbuy" checked />
+                            <label>NN Mua</label>
+                        </li>
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colNNsell" checked />
+                            <label>NN Bán</label>
+                        </li>
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colRoom" />
+                            <label>Room</label>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li id="filterCol" data-response="0" class="filter-li btn btn-ghi">
+                <i class="fas fa-filter" aria-hidden="true"></i>
+                <div class="filterContainer">
+                    <ul class="ul-filter">
+                        <li class="cbFilter">
+                            <label>Mã CK</label>
+                            <div class="filter-div-chk ">
+                                <label> Tăng </label>
+                                <input type="radio" name="defaultSort" value="SortName-up" checked />
+                            </div>
+                            <div class="filter-div-chk ">
+                                <label> Giảm </label>
+                                <input type="radio" name="defaultSort" value="SortName-down" />
+                            </div>
+                        </li>
+                        <li class="cbFilter">
+                            <label>Tổng KL</label>
+                            <div class="filter-div-chk ">
+                                <label> Tăng </label>
+                                <input type="radio" name="defaultSort" value="colTotalBuy-up" />
+                            </div>
+                            <div class="filter-div-chk ">
+                                <label> Giảm </label>
+                                <input type="radio" name="defaultSort" value="colTotalBuy-down" />
+                            </div>
+                        </li>
+
+                        <li class="cbFilter">
+                            <label>NN Mua</label>
+                            <div class="filter-div-chk ">
+                                <label> Tăng </label>
+                                <input type="radio" name="defaultSort" value="colNNbuy-up" />
+                            </div>
+                            <div class="filter-div-chk ">
+                                <label> Giảm </label>
+                                <input type="radio" name="defaultSort" value="colNNbuy-down" />
+                            </div>
+                        </li>
+                        <li class="cbFilter">
+                            <label>NN Bán</label>
+                            <div class="filter-div-chk ">
+                                <label> Tăng </label>
+                                <input type="radio" name="defaultSort" value="colNNsell-up" />
+                            </div>
+                            <div class="filter-div-chk ">
+                                <label> Giảm </label>
+                                <input type="radio" name="defaultSort" value="colNNsell-down" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li id="setUpColumnD" data-response="0" class="setup-li btn btn-ghi">
+                <i class="fas fa-cog" aria-hidden="true"></i>
+                <div class="setupContainer">
+                    <ul class="ul-setup">
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colNNbuy" />
+                            <label>NN Mua</label>
+                        </li>
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colNNsell" />
+                            <label>NN Bán</label>
+                        </li>
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colTotalBuy" />
+                            <label>Tổng KL mua</label>
+                        </li>
+                        <li class="cbSetup">
+                            <input type="checkbox" value="colTotalSell" />
+                            <label>Tổng KL bán</label>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div class="topbar-left a-item-center">
+        <div class="custom-select" id="lstLanguage">
+                <div class="select-selected select-arrow-active" onclick="showListLanguage()">VIE</div>
+                <div class="select-items select-hide" data-language="EN-GB" data-href="/?culture=en-GB" onclick="selectLanguage(this)">EN</div>
+                <div class="select-items select-hide" data-language="ZH-CN" data-href="/?culture=zh-CN" onclick="selectLanguage(this)">CN</div>
+                <div class="select-items select-hide" data-language="KO-KR" data-href="/?culture=ko-KR" onclick="selectLanguage(this)">KR</div>
+        </div>
+
+
+
+    </div>
+    <div id="show-login"></div>
+</div>
+<script>
+    var tempAdd =
+        '<li class="cbo-li">' +
+            '<input id="txtAppendCreation" type="text" placeholder="..Thêm danh mục.." />'+
+            '<span id="btnCreateCata" onclick="AddCataUser()"><button class="span-btn">' +
+        '<i class="fa fa-plus" style="margin: 4px 7px 0 7px;"></i>' +
+            '</button></span></li>';
+    var tempChild ='<li id="ID" class="cbo-li" data-status="_status_">' +
+        '<span id="normalCata_ID">' +
+        '<span href="javascript:" class="span_cata" onclick="GetChooseStock(this)">_Name_Catalogue</span>' +
+        '<span>' +
+        '<button id="btnDelCata_ID" class="span-btn mgin">' +
+        '<i class="fa fa-times" style="margin: 4px 7px 0 7px;"></i>' +
+        '</button>' +
+        '<button id="btnSetupCata_ID" class="span-btn mgin">' +
+        '<i class="fa fa-cog" style="margin: 4px 7px 0 7px;"></i>' +
+        '</button>' +
+
+        '</span>'+
+
+        '</span>' +
+        '<span id="setupCata_ID" class="display-none">' +
+        '<input id="txt_ID" type="text" value="_Name_Catalogue" data-editcata="ON" data-key="ON" data-name="_Name_Catalogue" />' +
+        '<button id="btnOkEdit_ID" class="span-btn">' +
+        '<i class="fa fa-edit" style="margin: 4px 7px 0 7px;"></i>' +
+        '</button>' +
+        '<button id="btnCancel_ID" class="span-btn">' +
+        '<i class="fa fa-times" style="margin: 4px 7px 0 7px;"></i>' +
+        '</button>' +
+        '</span>' +
+        '</li>';
+
+    var tempIndus = '<li class="cbo-li" data-url="_indus_code">' +
+        '<span>_name_indus</span>' +
+        '</li>';
+
+    $(function() {
+        GetDataCataForm();
+        LoadMenuIndustries();
+        $("input[data-key='ON']").focus(function (e) {
+            const name = $(this).attr("data-name").trim() || "";
+            $(this).val(name);
+        });
+        $("input[data-key='ON']").keyup(function (e) {
+            //esc
+            if (e.keyCode === 27) {
+                const lstid = $(this).parent().parent().attr("id");
+                SetupCatalog(lstid);
+                $(this).attr("data-key", "OFF");
+            }
+            e.stopPropagation();
+        });
+        $("#divExpand").find(".cbo-li").each(function () {
+            $(this).on("click", function (e) {
+
+                const urlLink = $(this).attr("data-url") || "";
+                const isFile = $(this).attr("data-file") || "";
+                $(".cbo-li").removeClass("active");
+                $(".cboDiv").removeClass("active");
+                $(this).addClass("active");
+                $(this).parent().parent().parent().addClass("active");
+                $("#tabActive").val(objectTab.tabExpand);
+                $("#tabActive").attr("data-typeTab", objectTab.tabExpand);
+                const language = getCookieByName(window.__languageCookieName);
+                $("#lblTabName").text("Quản lý danh mục");
+                if (urlLink !== "") {
+                    if (isFile !== "" && isFile.toUpperCase() === "TRUE") {
+                        window.open(urlLink, "_blank");
+                    } else {
+                        GetDetailStockByTab();
+                    }
+                }
+            });
+        });
+        $("#tabMarket").find(".cbo-li").each(function () {
+            $(this).on("click", function (e) {
+                const codeTypeTt = $(this).attr("data-tab") || "";
+                $(".cbo-li").removeClass("active");
+                $(".cboDiv").removeClass("active");
+                $(this).addClass("active");
+                $(this).parent().parent().parent().addClass("active");
+                const filter = $(this).attr("data-url") || "";
+                const language = getCookieByName(window.__languageCookieName);
+                $("#lblTabName").text("Quản lý danh mục");
+                if (codeTypeTt !== "") {
+                    $("#tabActive").val(objectTab.tabGdtt);
+                    $("#tabActive").attr("data-typeTab", objectTab.tabGdtt);
+                    GetDetailStockByTab(codeTypeTt);
+
+                } else {
+                    $("#tabActive").val(filter);
+                    $("#tabActive").attr("data-typeTab", objectTab.tabMarket);
+
+                    GetDetailStockByTab();
+                }
+                e.stopPropagation();
+            });
+
+        });
+        $("#tabWarranty").on("click", function (e) {
+            $(".cbo-li").removeClass("active");
+            $(".cboDiv").removeClass("active");
+            $(this).addClass("active");
+            $("#tabActive").val("CQ");
+            $("#tabActive").attr("data-typeTab", objectTab.tabCw);
+            const language = getCookieByName(window.__languageCookieName);
+            $("#lblTabName").text("Quản lý danh mục");
+            
+            GetDetailStockByTab();
+        });
+        $("#tabHotrend").on("click", function (e) {
+            $(".cbo-li").removeClass("active");
+            $(".cboDiv").removeClass("active");
+            $(this).addClass("active");
+            $("#tabActive").val("HOT");
+            $("#tabActive").attr("data-typeTab", objectTab.tabHot);
+            const language = getCookieByName(window.__languageCookieName);
+           $("#lblTabName").text("Quản lý danh mục");
+            GetDetailStockByTab();
+        });
+        $("#tabTraiphieu").on("click", function (e) {
+            $(".cbo-li").removeClass("active");
+            $(".cboDiv").removeClass("active");
+            $(this).addClass("active");
+            $("#tabActive").val("BO-HSX");
+            $("#tabActive").attr("data-typeTab", "M");
+            const language = getCookieByName(window.__languageCookieName);
+            $("#lblTabName").text("Quản lý danh mục");
+            GetDetailStockByTab();
+        });
+        //tabDerivative
+        $.each($("#tabDerivative .cbo-li"), function() {
+            $(this).on("click", function (e) {
+                const code = $(this).attr("data-tab") || "";
+                $(".cbo-li").removeClass("active");
+                $(".cboDiv").removeClass("active");
+                $(this).addClass("active");
+                $(this).parent().parent().parent().addClass("active");
+                $("#tabActive").val(code);
+                $("#tabActive").attr("data-typeTab", objectTab.tabDerivative);
+                const language = getCookieByName(window.__languageCookieName);
+                $("#lblTabName").text("Quản lý danh mục");
+                GetDetailStockByTab();
+            });
+        });
+        //tabFavor
+        $("#tabFavorites").on("click", function() {
+            $(".cbo-li").removeClass("active");
+            $(".cboDiv").removeClass("active");
+            $(this).addClass("active");
+            $("#tabActive").val("FAV");
+            $("#tabActive").attr("data-typeTab", objectTab.tabFav);
+            const language = getCookieByName(window.__languageCookieName);
+            $("#lblTabName").text("Quản lý danh mục");
+            GetDetailStockByTab();
+        });
+        const sortSetPrev = window.GetStoreLocationFavor(window.nameStoreSorted).join("");
+        $('input[type="radio"][name="defaultSort"]').each(function () {
+            const thisVal = $(this).val();
+            if (thisVal === sortSetPrev) {
+                $(this).prop("checked", true);
+            }
+            $(this).on("click",function () {
+                window.RemoveAllValueFromStorage(window.nameStoreSorted);
+                if ($(this).is(":checked")) {
+                    const val = $(this).val() || "";
+                    window.SetStoreStockFavor(window.nameStoreSorted, val);
+                }
+            });
+        });
+        $("#menuHsx, #menuHnx, #menuUpc").on("click", function (e) {
+            e.preventDefault();
+            const hrefThis = $(this).attr("data-href");
+            $(`#${hrefThis}`).trigger("click");
+            e.stopPropagation();
+        });
+
+    });
+    function LoadMenuIndustries() {
+        $.ajax({
+            url: "/get-all-industries",
+            type: "POST",
+            data: {
+            },
+            async: false,
+            cache: false, traditional: true,
+            beforeSend: function () {
+                waitForLoading(true);
+            },
+            success: function (data) {
+                if (data !== null && data !== undefined && data !== "") {
+                    SetDataIndustries(data.lstIndus,data.lang);
+                    SetEventOnIndustries();
+                }
+            }, error: function (e) {
+                waitForLoading(false);
+                console.log(e);
+            }, complete: function () {
+                waitForLoading(false);
+            }
+        });
+    }
+    function GetDataCataForm() {
+        $.ajax({
+            url: "/cata/load-cata",
+            type: "POST",
+            data: {
+            },
+            async: false,
+            cache: false, traditional: true,
+            beforeSend: function () {
+                waitForLoading(true);
+            },
+            success: function (data) {
+                if (data !== null && data !== undefined && data !== "") {
+                    SetLoadCatauser(data.arrCata);
+                }
+            }, error: function (e) {
+                waitForLoading(false);
+                console.log(e);
+            }
+            ,complete:function() {
+                waitForLoading(false);
+            }
+        });
+    }
+    function SetEventOnElement(idGo) {
+        $(`#btnSetupCata_${idGo}, #btnCancel_${idGo}`).on("click",function(e) {
+            SetupCatalog(idGo);
+            e.stopPropagation();
+        });
+        $(`#btnDelCata_${idGo}`).on("click",function(e) {
+            DoDelCatalog(idGo);
+            e.stopPropagation();
+        });
+        $(`#btnOkEdit_${idGo}`).on("click",function(e) {
+            DoEditCatalog(idGo);
+            e.stopPropagation();
+        });
+    }
+
+    function SetLoadCatauser(data) {
+        try {
+            $("#ulContainer").empty();
+            for (let i = 0; i < data.length; i++) {
+                let strAppend = "";
+                const idGo = data[i].LISTID.trim();
+                let subtempChild = tempChild.replace(/_Name_Catalogue/g, data[i].LISTNAME.trim());
+                subtempChild = subtempChild.replace(/ID/g, idGo);
+                subtempChild = subtempChild.replace(/_status_/g, data[i].ACTIVE.trim());
+                strAppend = subtempChild;
+                $("#ulContainer").append(strAppend);
+                SetEventOnElement(idGo);
+            }
+            $("#ulContainer").attr("data-catalog", data.length);
+            $("#ulContainer").prepend(tempAdd);
+            $("#txtAppendCreation").keypress(function (e) {
+                enterKeyPress(e, "btnCreateCata");
+                e.stopPropagation();
+            });
+        } catch (e) {
+            console.log(e);
+        }
+    }
+    function AddCataUser() {
+        const textAppend = $("#txtAppendCreation").val().trim();
+        if (textAppend !== "") {
+            window.addCata(textAppend).done(function (data) {
+                if (data !== null && data !== undefined && data !== "" && data.success / 1 < 0) {
+                    //alert("Thêm danh mục thất bại !");
+                    nvsError(null, "Thêm danh mục thất bại !",null);
+                }
+            }).fail(function (e) {
+                waitForLoading(false);
+                console.log(e);
+            }).always(function() {
+                waitForLoading(false);
+            });
+            GetDataCataForm();
+            $("#ulContainer li[data-status='Y'] span span").trigger("click");
+        } else {
+            //alert("Bạn chưa nhập tên danh mục cần thêm !");
+            nvsError(null, "Bạn chưa nhập tên danh mục cần thêm !",null);
+            $("#txtAppendCreation").focus();
+        }
+    }
+    function SetDataIndustries(data, lang) {
+        try {
+            $("#containerIndustries-1").empty();
+            $("#containerIndustries-2").empty();
+            const lengthData = data.length;
+            if (lengthData > 0) {
+                const length = Math.round(lengthData / 2);
+                for (let i = 0; i < length; i++) {
+                    let strAppend = "";
+                    let subtempChild = tempIndus.replace(/_indus_code/g, data[i].Code.trim());
+                    if (lang !== "" && lang !== undefined && lang !== null) {
+                        if (lang === "VI-VN") {
+                            subtempChild = subtempChild.replace(/_name_indus/g, data[i].NAME.trim());
+                        } else if (lang === 'ZH-CN') {
+                            subtempChild = subtempChild.replace(/_name_indus/g, data[i].NAME_CN.trim())
+                        }
+                        else if (lang === 'KO-KR') {
+                            subtempChild = subtempChild.replace(/_name_indus/g, data[i].NAME_KO.trim())
+                        }
+                        else {
+                            subtempChild = subtempChild.replace(/_name_indus/g, data[i].NAME_EN.trim())
+                        }
+                    } else {
+                        subtempChild = subtempChild.replace(/_name_indus/g, data[i].NAME.trim());
+                    }
+                    strAppend = subtempChild;
+                    $("#containerIndustries-1").append(strAppend);
+                }
+                for (let i = length; i < lengthData; i++) {
+                    let strAppend = "";
+                    let subtempChild = tempIndus.replace(/_indus_code/g, data[i].Code.trim());
+                    if (lang !== "" && lang !== undefined && lang !== null) {
+                        if (lang === "VI-VN") {
+                            subtempChild = subtempChild.replace(/_name_indus/g, data[i].NAME.trim());
+                        } else if (lang === 'ZH-CN') {
+                            subtempChild = subtempChild.replace(/_name_indus/g, data[i].NAME_CN.trim())
+                        } else if (lang === 'KO-KR') {
+                            subtempChild = subtempChild.replace(/_name_indus/g, data[i].NAME_KO.trim())
+                        }
+                        else {
+                            subtempChild = subtempChild.replace(/_name_indus/g, data[i].NAME_EN.trim())
+                        }
+                    } else {
+                        subtempChild = subtempChild.replace(/_name_indus/g, data[i].NAME.trim());
+                    }
+                    strAppend = subtempChild;
+                    $("#containerIndustries-2").append(strAppend);
+                }
+            }
+
+        } catch (e) {
+            console.log(e);
+        }
+
+    }
+    function SetEventOnIndustries() {
+        $("#containerIndustries-1 li, #containerIndustries-2 li").each(function (e) {
+            try {
+                $(this).on("click", function (i) {
+                    $(".cbo-li").removeClass("active");
+                    $(".cboDiv").removeClass("active");
+                    $(this).addClass("active");
+                    $(this).parent().parent().parent().parent().toggleClass("active");
+                    const code = $(this).attr("data-url");
+                    $("#tabActive").val(code);
+                    $("#tabActive").attr("data-typeTab", "I");
+                    const language = getCookieByName(window.__languageCookieName);
+                    $("#lblTabName").text("Quản lý danh mục");
+                    GetDetailStockByTab();
+                });
+            } catch (e) {
+                console.log(e);
+            }
+        });
+    }
+
+    function DoEditCatalog(lsid) {
+        try {
+            const newName = $(`#txt_${lsid}`).val().trim();
+            if (newName === "") {
+                nvsError(null, "Tên danh mục không được để trống !",null);
+            } else {
+                window.EditCatalog(newName, lsid);
+                GetDataCataForm();
+            }
+        } catch (e) {
+            console.log(e);
+        }
+    }
+    function DoDelCatalog(lsid) {
+        try {
+            nvsConfirm(null, "Bạn có chắc chắn muốn xóa danh mục này không?", function () {
+                window.delCata(lsid).done(function(data) {
+                    if (data !== null && data !== undefined && data !== "" && data.success / 1 < 0) {
+                        nvsError(null, "Xóa danh mục thất bại !",null);
+                    }
+                }).done(GetDataCataForm())
+                    .done(window.checkLoadStock())
+                    .fail(function (e) {
+                    console.log(e);
+                });
+            });
+        } catch (e) {
+            console.log(e);
+        }
+    }
+    function SetupCatalog(lsid) {
+        if (!$(`#normalCata_${lsid}`).hasClass("display-none")) {
+            $(`#normalCata_${lsid}`).addClass("display-none");
+            $(`#setupCata_${lsid}`).removeClass("display-none");
+            $(`#txt_${lsid}`).focus();
+            $(`#txt_${lsid}`).attr("data-key","ON");
+        } else {
+            $(`#normalCata_${lsid}`).removeClass("display-none");
+            $(`#setupCata_${lsid}`).addClass("display-none");
+            $(`#txt_${lsid}`).val($(this).attr("data-name") || "");
+            $(`#txt_${lsid}`).attr("data-key","OFF");
+        }
+    }
+
+</script>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content-container scrollTable" id="scrollArea">
+                
+
+<div id="view-container">
+    <style>
+    div[data-colChg="left"] {
+        left: 0;
+    }
+
+    div[data-colChg="right"] {
+        right: 0;
+    }
+
+    div[data-colChg]:hover i {
+        color: red;
+    }
+
+    div[data-colChg]:hover {
+        cursor: pointer;
+        background: #2f2f2f;
+    }
+
+    div[data-colChg] {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        padding: 0 3px;
+    }
+
+        div[data-colChg] i {
+            padding-top: 240%;
+        }
+
+    /*.table-fixed {
+        width: 100%;
+    }
+
+        .table-fixed tbody {
+            height: calc(100vh - 202px);
+            overflow-y: auto;
+            width: 100%;
+        }
+
+        .table-fixed thead, tbody, tr, td, th {
+            display: block;
+        }
+
+        .table-fixed tbody td {
+        }
+
+        .table-fixed thead tr th {
+            float: left;
+        }*/ 
+</style>
+ 
+<div class="tabbed-content" >
+    <table class="banggia tbScroll" id="tblDetailStock">
+        <colgroup>
+            <col class="col-base-xsmall-5-4">
+            
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col data-setup="colBidQttyTotal" data-display="true" class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col data-setup="colSubSymbol" class="col-base-small-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col data-setup="colTotalBuy" data-display="true" class="col-base-xsmall-2">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col data-setup="colOffQttyTotal" data-display="true" class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col class="col-base-xsmall-1">
+            <col data-setup="colNNbuy" data-display="true" class="col-base-xsmall-1">
+            <col data-setup="colNNsell" data-display="true" class="col-base-xsmall-1">
+            <col data-setup="colRoom" data-display="false" class="col-base-xsmall-1 display-none">
+        </colgroup>
+        <thead id="thead-price">
+            <tr>
+                <th data-sort="SortName"  rowspan="2" class="bd-gr-bdl">Mã CK</th>
+                
+                <th rowspan="2">Trần</th>
+                <th rowspan="2">Sàn</th>
+                <th rowspan="2">TC</th>
+                <th data-span="colBidQttyTotal" colspan="7" class="bd-gr-bdr">Mua</th>
+                <th rowspan="2" data-setup="colSubSymbol" style="border-left-color:transparent;"></th>
+                <th rowspan="2" class="bd-gr-bdl">Giá <br/> khớp</th>
+                <th rowspan="2" data-sort="chgValuePrice" class="chgValuePrice" >
+                    <div data-colChg="left">
+                        <i class="fa fa-caret-left icon-head"></i>
+                    </div>
+                    <span data-colChg="chgVal" style="font-size: 15px;">
+                        +/-
+                    </span>
+                    <span data-colChg="chgPer" class="display-none" style="font-size: 15px;">
+                        &#37;
+                    </span>
+                    <div data-colChg="right">
+                        <i class="fa fa-caret-right icon-head"></i>
+                    </div>
+
+                </th>
+                <th rowspan="2">KL <br/> khớp</th>
+                <th data-setup="colTotalBuy" data-sort="colTotalBuy" data-display="true" rowspan="2">
+                    <div data-colChg="left">
+                        <i class="fa fa-caret-left icon-head"></i>
+                    </div>
+                    <span data-colChg="totalVol">
+                        Tổng <br/> KL
+                    </span>
+                    <span data-colChg="totalVal" class="display-none">
+                        Tổng <br/> GT
+                    </span>
+                    <div data-colChg="right">
+                        <i class="fa fa-caret-right icon-head"></i>
+                    </div>
+                </th>
+                <th data-span="colOffQttyTotal" colspan="7" class="bd-gr-bdlx">Bán</th>
+                <th rowspan="2" class="bd-gr-bdl">Giá <br/> TB</th>
+                <th rowspan="2">Cao <br/> nhất</th>
+                <th rowspan="2">Thấp <br/> nhất</th>
+                <th data-setup="colNNbuy" data-sort="colNNbuy" data-display="true" rowspan="2">NN <br/> Mua</th>
+                <th data-setup="colNNsell" data-sort="colNNsell" data-display="true" rowspan="2">NN <br/> Bán</th>
+                <th data-setup="colRoom" data-display="false" rowspan="2" class="display-none">Room</th>
+            </tr>
+            <tr>
+                <th data-setup="colBidQttyTotal" data-display="true" class="bd-gr-bdl">KL 4+</th>
+                <th>Giá 3</th>
+                <th>KL 3</th>
+                <th>Giá 2</th>
+                <th>KL 2</th>
+                <th>Giá 1</th>
+                <th class="bd-gr-bdr">KL 1</th>
+                <th class="bd-gr-bdl">Giá 1</th>
+                <th>KL 1</th>
+                <th>Giá 2</th>
+                <th>KL 2</th>
+                <th>Giá 3</th>
+                <th>KL 3</th>
+                <th data-setup="colOffQttyTotal" data-display="true">KL 4+</th>
+            </tr>
+        </thead>
+        <tbody id="contentArea"></tbody>
+    </table>
+</div>
+<!-- Popup -->
+<div class="overPopup"></div>
+<div id="stockViewDetail" class="Click-MaCKPopup">
+</div>
+
+<!-- end-Popup -->
+
+
+
+<script>
+    //$(document).ready(function () {
+    //    $(".contentPopup").focusout(function () {
+    //        alert("ccc");
+    //        //jsClosePopup();
+    //    });
+    //});
+    $("#toolPrice").removeClass("display-none");
+    $("#boxSearchStock").removeClass("display-none");
+    $("#setUpColumn").removeClass("display-none");
+    $("#setUpColumnD").addClass("display-none");
+    $("#filterCol").removeClass("display-none");
+
+
+    $("div[data-colChg]").each(function () {
+        $(this).on("click", function (e) {
+            //e.preventDefault();
+            const id = $(this).parent("th").find("span[data-colChg].display-none").attr("data-colChg");
+            const idN = $(this).parent("th").find("span[data-colChg]:not(.display-none)").attr("data-colChg");
+            $(`#tblDetailStock span[data-show='${idN}']`).addClass("display-none");
+            $(`#tblDetailStock span[data-show='${id}']`).removeClass("display-none");
+            $(this).parent("th").find(`span[data-colChg =${id}]`).removeClass("display-none");
+            $(this).parent("th").find(`span[data-colChg =${idN}]`).addClass("display-none");
+            e.stopPropagation();
+            const thisTh = $(this).parent("th").attr("data-sort");
+            if (thisTh.indexOf("colTotalBuy") !== -1) {
+                const arrVal = [];
+                const rows = $("#tblDetailStock").find(`tr span[data-show='${id}']`);
+                for (let i = 0; i < rows.length; i++) {
+                    arrVal.push($(rows[i]).text().length);
+                }
+                const length = Math.max.apply(Math, arrVal);
+                if (length > 10 && $(window).width() >= 1680) {
+                    $(`col[data-setup=${thisTh}]`).css("width", "5%");
+                } else {
+                    $(`col[data-setup=${thisTh}]`).css("width", "4%");
+                }
+            }
+
+        });
+    });
+</script>
+</div>
+
+
+                <div class="footer d-flex" style="padding-bottom:30px">
+    <div class="txtc">
+        ĐƠN VỊ GIÁ: 1,000 ĐỒNG <br />
+        ĐƠN VỊ KHỐI LƯỢNG: 10 CỔ PHIẾU
+    </div>
+
+    <div class="copyright">
+        <a>© Công ty cổ phần Chứng khoán Tân Việt (TVSI) </a><br />
+        <a>79 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội. * Hotline: 1900 1885* Email: </a> <a class="class-foot" href="mailto:contact@tvsi.com.vn"> contact@tvsi.com.vn</a> <br />
+        <a class="class-foot" href="http://www.navisoft.com.vn/">Phát triển bởi Navisoft</a>
+    </div>
+</div>
+            </div>
+        </div>
+
+            <style>
+        .test .content-foot {
+            display: none;
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+    <div class="main-news d-flex">
+        <div class="latest-news">
+            <span class="title-footer">
+                <i class="fas fa-bell"></i>
+                Thị trường cổ phiếu
+            </span>
+            <div class="marquee test test28">
+                <a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621464'> Xu thế dòng tiền: Thanh khoản thấp, nghi ngờ còn lớn </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621468'> HOSE: Số liệu quản lý sở hữu của nhà đầu tư nước ngoài (21/03/2022) </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621460'> Thị trường tài chính 24h: Ngân hàng nhiều triển vọng </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621461'> Diễn biến cổ phiếu cần quan tâm tuần qua </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621469'> HNX: Số liệu Quản lý Sở hữu của Nhà đầu tư nước ngoài tại ngày 21/03/2022 </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621448'> Giao dịch chứng khoán chiều 18/3: VN-Index lỗi hẹn mốc 1.470 điểm, \"hệ sinh thái DNP\" vẫn bốc đầu </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621454'> Thị trường giật lên xuống như bước nhảy Kangaroo: Tìm cơ hội ở nhóm ngành nào? </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621426'> VN30 sẽ được định giá lại </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621427'> Nóng chuyện vượt thẩm quyền giao dịch của doanh nghiệp niêm yết </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621431'> Nhận định thị trường phiên giao dịch chứng khoán ngày 18/3: Ưu tiên vị thế đứng ngoài quan sát </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621432'> Thị trường tài chính 24h: Dòng tiền trú ẩn gia tăng vào bất động sản </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621415'> HOSE: Số liệu quản lý sở hữu của nhà đầu tư nước ngoài (18/03/2022) </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621416'> Các nhà quản lý quỹ: Chứng khoán đang bước vào thị trường giá giảm </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621419'> Giao dịch chứng khoán khối ngoại ngày 17/3: Trở lại mua ròng hơn 110 tỷ đồng, tâm điểm DPM </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621443'> HOSE: Điểm tin giao dịch 17.03.2022 </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621420'> HOSE: Điểm tin giao dịch 17.03.2022 </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621414'> HOSE: Danh sách các Công ty Chứng khoán thành viên có Báo cáo tài chính kiểm toán năm 2021 và BCTLATTC năm 2021 đã được công bố trên website của HOSE (tính đến hết ngày 16/03/2022) </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621497'> Giao dịch chứng khoán chiều 21/3: VN-Index tăng vọt hơn 25 điểm, cổ phiếu bất động sản nở rộ sắc tím </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621472'> Giao dịch chứng khoán sáng 21/3: VN-Index áp sát mốc 1.480, nhóm bất động sản nổi dậy </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621473'> \"Cân\" tiềm năng và rủi ro của cổ phiếu liên quan \"bão\" giá hàng hóa </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621475'> HOSE: Danh sách các Công ty Chứng khoán thành viên có Báo cáo tài chính kiểm toán năm 2021 và BCTLATTC năm 2021 đã được công bố trên website của HOSE (tính đến hết ngày 18/03/2022) </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621485'> Nhà đầu tư nước ngoài “xoay gió” </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621486'> Nhận định thị trường phiên giao dịch chứng khoán ngày 21/3: Nhóm ngân hàng, thép đã có mức hỗ trợ cứng </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621487'> Góc nhìn kỹ thuật phiên giao dịch chứng khoán ngày 21/3: Kiểm tra lại vùng kháng cự quanh MA 20 </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621488'> Góc nhìn chuyên gia chứng khoán tuần mới: \"Đãi cát tìm vàng\" mùa đại hội đồng cổ đông </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621489'> Cổ phiếu cần quan tâm ngày 21/3/2022 </a>
+            </div>
+        </div>
+        <div class="latest-news">
+            <span class="title-footer">
+                <i class="fas fa-bell"> </i>
+                Th&#244;ng b&#225;o từ TVSI
+            </span>
+            <div class="marquee test test29">
+                <a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621492'> Thông báo đưa CII  Công ty CP Đầu tư Hạ tầng Kỹ thuật TP Hồ Chí Minh ra khỏi Danh sách chứng khoán được làm TSĐB tại TVSI </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621407'> Chương trình tuyển dụng “Giới thiệu ngay - tiền về liền tay” </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621347'> TVSI hân hạnh hỗ trợ Quý khách qua kênh Zalo </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621346'> Siêu phẩm ưu đãi – TV Super Combo </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621249'> Áp dụng lãi suất 8,0%/năm đối với trái phiếu TP_TVSI_0218 kỳ 03 tháng từ 10/03/2022 đến 10/06/2022 </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621226'> TCBC_Lễ ký kết thỏa thuận hợp tác giữa TVFM với SCB và TVSI </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621190'> Áp dụng lãi suất 8,8%/năm đối với trái phiếu TSICH2126001 kỳ 03 tháng từ 08/03/2022 đến 08/06/2022 </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621170'> Thông báo hủy đăng ký chứng khoán GTN </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621169'> Phí giao dịch siêu ưu đãi 0.08% tặng Khách hàng Quy Nhơn  </a><a class='content-foot' target='_blank' href='http://finance.tvsi.com.vn/news/detailNews?newsId=621139'> THÔNG BÁO ĐẤU GIÁ BÁN CỔ PHẦN CỦA CÔNG TY CỔ PHẦN MÔI TRƯỜNG VÀ DỊCH VỤ ĐÔ THỊ SƠN LA </a>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    $(function () {
+        var test28 = $('.test.test28 .content-foot'), index28 = 0;
+        if (test28 && test28.length > 0) {
+            setInterval(function () {
+                if (index28 >= test28.length) {
+                    index28 = 0;
+                }
+                //
+                $(test28).css('display', 'none');
+                $(test28[index28]).css('display', 'block');
+                //
+                index28++;
+            }, 5000);
+        }
+
+        var test29 = $('.test.test29 .content-foot'), index29 = 0;
+        if (test29 && test29.length > 0) {
+            setInterval(function () {
+                if (index29 >= test29.length) {
+                    index29 = 0;
+                }
+                //
+                $(test29).css('display', 'none');
+                $(test29[index29]).css('display', 'block');
+                //
+                index29++;
+            }, 5000);
+        }
+    });
+</script>
+
+
+
+    </div>
+    <div class="loading-container"><div class="loading-opacity"></div><div class="circle-loading"></div><div class="circle-loading-inner"></div></div>
+    <script type="text/javascript" src="/Scripts/PriceBaseStock.js?v=6.9.21"></script>
+    <script type="text/javascript" src="/Scripts/SiteBaseStock.js?v=6.9.21"></script>
+    <script type="text/javascript" src="/Scripts/charts.js?v=6.9.21"></script>
+    <script type="text/javascript" src="/Scripts/ConnectSignalR.js?v=6.9.21"></script>
+    <script>
+        $(".close-popup").click(function () {
+            $(".popup-load").removeClass("active");
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65114755-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-65114755-4');
+    </script>
+</body>
+</html>
+
