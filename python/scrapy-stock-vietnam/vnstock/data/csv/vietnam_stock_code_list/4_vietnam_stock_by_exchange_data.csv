@@ -1542,8 +1542,8 @@
 1540,CVT122008,11324015,BOND,BOND,CVT122008 - Bond,CVT122008 - Bond,CVT122008 - Trái phiếu,CVT122008 - Trái phiếu
 1541,CVT122007,11324037,BOND,DELISTED,CVT122007 - Bond,CVT122007 - Bond,CVT122007 - Trái phiếu,CVT122007 - Trái phiếu
 1542,CVT,8425002,STOCK,HSX,CMC Joint Stock Company,CMC JSC,CMC JSC,Công ty Cổ phần CMC
-1543,CVRE2406,14406049,CW,HSX,,,,
-1544,CVRE2405,14406011,CW,HSX,,,,
+1543,CVRE2406,14406049,CW,HSX,CVRE2406 - Covered warrant,CVRE2406 - Covered warrant,CVRE2406 - Chứng quyền,CVRE2406 - Chứng quyền
+1544,CVRE2405,14406011,CW,HSX,CVRE2405 - Covered warrant,CVRE2405 - Covered warrant,CVRE2405 - Chứng quyền,CVRE2405 - Chứng quyền
 1545,CVRE2404,13880688,CW,DELISTED,CVRE2404 - Covered warrant,CVRE2404 - Covered warrant,CVRE2404 - Chứng quyền,CVRE2404 - Chứng quyền
 1546,CVRE2403,13880691,CW,DELISTED,CVRE2403 - Covered warrant,CVRE2403 - Covered warrant,CVRE2403 - Chứng quyền,CVRE2403 - Chứng quyền
 1547,CVRE2402,13874816,CW,HSX,CVRE2402 - Covered warrant,CVRE2402 - Covered warrant,CVRE2402 - Chứng quyền,CVRE2402 - Chứng quyền
@@ -1596,8 +1596,8 @@
 1594,CVRE2113,8424694,CW,DELISTED,CVRE2113 - Covered warrant,CVRE2113 - Covered warrant,CVRE2113 - Chứng quyền,CVRE2113 - Chứng quyền
 1595,CVRE2110,8424760,CW,DELISTED,CVRE2110 - Covered warrant,CVRE2110 - Covered warrant,CVRE2110 - Chứng quyền,CVRE2110 - Chứng quyền
 1596,CVRE2105,8424695,CW,DELISTED,CVRE2105 - Covered warrant,CVRE2105 - Covered warrant,CVRE2105 - Chứng quyền,CVRE2105 - Chứng quyền
-1597,CVPB2408,14406035,CW,HSX,,,,
-1598,CVPB2407,14406026,CW,HSX,,,,
+1597,CVPB2408,14406035,CW,HSX,CVPB2408 - Covered warrant,CVPB2408 - Covered warrant,CVPB2408 - Chứng quyền,CVPB2408 - Chứng quyền
+1598,CVPB2407,14406026,CW,HSX,CVPB2407 - Covered warrant,CVPB2407 - Covered warrant,CVPB2407 - Chứng quyền,CVPB2407 - Chứng quyền
 1599,CVPB2406,13880664,CW,HSX,CVPB2406 - Covered warrant,CVPB2406 - Covered warrant,CVPB2406 - Chứng quyền,CVPB2406 - Chứng quyền
 1600,CVPB2405,13880698,CW,DELISTED,CVPB2405 - Covered warrant,CVPB2405 - Covered warrant,CVPB2405 - Chứng quyền,CVPB2405 - Chứng quyền
 1601,CVPB2404,13880675,CW,DELISTED,CVPB2404 - Covered warrant,CVPB2404 - Covered warrant,CVPB2404 - Chứng quyền,CVPB2404 - Chứng quyền
@@ -1642,8 +1642,8 @@
 1640,CVPB2201,8424955,CW,DELISTED,CVPB2201 - Covered warrant,CVPB2201 - Covered warrant,CVPB2201 - Chứng quyền,CVPB2201 - Chứng quyền
 1641,CVPB2111,8424712,CW,DELISTED,CVPB2111 - Covered warrant,CVPB2111 - Covered warrant,CVPB2111 - Chứng quyền,CVPB2111 - Chứng quyền
 1642,CVP,11080481,STOCK,DELISTED,Cua Viet Port Joint Stock Company,Cua Viet Port,Cảng Cửa Việt,Công ty cổ phần Cảng Cửa Việt
-1643,CVNM2406,14406052,CW,HSX,,,,
-1644,CVNM2405,14406028,CW,HSX,,,,
+1643,CVNM2406,14406052,CW,HSX,CVNM2406 - Covered warrant,CVNM2406 - Covered warrant,CVNM2406 - Chứng quyền,CVNM2406 - Chứng quyền
+1644,CVNM2405,14406028,CW,HSX,CVNM2405 - Covered warrant,CVNM2405 - Covered warrant,CVNM2405 - Chứng quyền,CVNM2405 - Chứng quyền
 1645,CVNM2404,13880693,CW,DELISTED,CVNM2404 - Covered warrant,CVNM2404 - Covered warrant,CVNM2404 - Chứng quyền,CVNM2404 - Chứng quyền
 1646,CVNM2403,13880697,CW,DELISTED,CVNM2403 - Covered warrant,CVNM2403 - Covered warrant,CVNM2403 - Chứng quyền,CVNM2403 - Chứng quyền
 1647,CVNM2402,13874797,CW,HSX,CVNM2402 - Covered warrant,CVNM2402 - Covered warrant,CVNM2402 - Chứng quyền,CVNM2402 - Chứng quyền
@@ -1688,8 +1688,8 @@
 1686,CVJC2202,11104608,CW,DELISTED,CVJC2202 - Covered warrant,CVJC2202 - Covered warrant,CVJC2202 - Chứng quyền,CVJC2202 - Chứng quyền
 1687,CVJC2201,8424506,CW,DELISTED,CVJC2201 - Covered warrant,CVJC2201 - Covered warrant,CVJC2201 - Chứng quyền,CVJC2201 - Chứng quyền
 1688,CVJC2103,8424510,CW,DELISTED,CVJC2103 - Covered warrant,CVJC2103 - Covered warrant,CVJC2103 - Chứng quyền,CVJC2103 - Chứng quyền
-1689,CVIC2405,14406021,CW,HSX,,,,
-1690,CVIC2404,14406027,CW,HSX,,,,
+1689,CVIC2405,14406021,CW,HSX,CVIC2405 - Covered warrant,CVIC2405 - Covered warrant,CVIC2405 - Chứng quyền,CVIC2405 - Chứng quyền
+1690,CVIC2404,14406027,CW,HSX,CVIC2404 - Covered warrant,CVIC2404 - Covered warrant,CVIC2404 - Chứng quyền,CVIC2404 - Chứng quyền
 1691,CVIC2403,13880696,CW,DELISTED,CVIC2403 - Covered warrant,CVIC2403 - Covered warrant,CVIC2403 - Chứng quyền,CVIC2403 - Chứng quyền
 1692,CVIC2402,13880672,CW,HSX,CVIC2402 - Covered warrant,CVIC2402 - Covered warrant,CVIC2402 - Chứng quyền,CVIC2402 - Chứng quyền
 1693,CVIC2401,13874834,CW,HSX,CVIC2401 - Covered warrant,CVIC2401 - Covered warrant,CVIC2401 - Chứng quyền,CVIC2401 - Chứng quyền
@@ -1717,8 +1717,8 @@
 1715,CVIC2108,8424774,CW,DELISTED,CVIC2108 - Covered warrant,CVIC2108 - Covered warrant,CVIC2108 - Chứng quyền,CVIC2108 - Chứng quyền
 1716,CVIC2107,8424479,CW,DELISTED,,,,
 1717,CVIC2106,8424838,CW,DELISTED,CVIC2106 - Covered warrant,CVIC2106 - Covered warrant,CVIC2106 - Chứng quyền,CVIC2106 - Chứng quyền
-1718,CVIB2406,14406020,CW,HSX,,,,
-1719,CVIB2405,14406019,CW,HSX,,,,
+1718,CVIB2406,14406020,CW,HSX,CVIB2406 - Covered warrant,CVIB2406 - Covered warrant,CVIB2406 - Chứng quyền,CVIB2406 - Chứng quyền
+1719,CVIB2405,14406019,CW,HSX,CVIB2405 - Covered warrant,CVIB2405 - Covered warrant,CVIB2405 - Chứng quyền,CVIB2405 - Chứng quyền
 1720,CVIB2404,13880749,CW,DELISTED,CVIB2404 - Covered warrant,CVIB2404 - Covered warrant,CVIB2404 - Chứng quyền,CVIB2404 - Chứng quyền
 1721,CVIB2403,13880684,CW,DELISTED,CVIB2403 - Covered warrant,CVIB2403 - Covered warrant,CVIB2403 - Chứng quyền,CVIB2403 - Chứng quyền
 1722,CVIB2402,13779743,CW,HSX,CVIB2402 - Covered warrant,CVIB2402 - Covered warrant,CVIB2402 - Chứng quyền,CVIB2402 - Chứng quyền
@@ -1731,8 +1731,8 @@
 1729,CVIB2302,12373340,CW,DELISTED,CVIB2302 - Covered warrant,CVIB2302 - Covered warrant,CVIB2302 - Chứng quyền,CVIB2302 - Chứng quyền
 1730,CVIB2301,12035351,CW,DELISTED,CVIB2301 - Covered warrant,CVIB2301 - Covered warrant,CVIB2301 - Chứng quyền,CVIB2301 - Chứng quyền
 1731,CVIB2201,11850698,CW,DELISTED,CVIB2201 - Covered warrant,CVIB2201 - Covered warrant,CVIB2201 - Chứng quyền,CVIB2201 - Chứng quyền
-1732,CVHM2407,14406025,CW,HSX,,,,
-1733,CVHM2406,14406046,CW,HSX,,,,
+1732,CVHM2407,14406025,CW,HSX,CVHM2407 - Covered warrant,CVHM2407 - Covered warrant,CVHM2407 - Chứng quyền,CVHM2407 - Chứng quyền
+1733,CVHM2406,14406046,CW,HSX,CVHM2406 - Covered warrant,CVHM2406 - Covered warrant,CVHM2406 - Chứng quyền,CVHM2406 - Chứng quyền
 1734,CVHM2405,13880690,CW,HSX,CVHM2405 - Covered warrant,CVHM2405 - Covered warrant,CVHM2405 - Chứng quyền,CVHM2405 - Chứng quyền
 1735,CVHM2404,13880674,CW,DELISTED,CVHM2404 - Covered warrant,CVHM2404 - Covered warrant,CVHM2404 - Chứng quyền,CVHM2404 - Chứng quyền
 1736,CVHM2403,13885778,CW,HSX,CVHM2403 - Covered warrant,CVHM2403 - Covered warrant,CVHM2403 - Chứng quyền,CVHM2403 - Chứng quyền
@@ -1852,8 +1852,8 @@
 1850,CT5,8424732,STOCK,DELISTED,,,,
 1851,CT3,8425669,STOCK,UPCOM,Project 3 Construction And Investment Joint Stock Company,Project 3 Construction,Xây dựng công trình 3,Công ty Cổ phần Đầu tư và Xây dựng công trình 3
 1852,CSV,8424950,STOCK,HSX,South Basic Chemicals Joint Stock Company,South Basic Chemicals,Hóa chất Cơ bản miền Nam,Công ty Cổ phần Hóa chất Cơ bản miền Nam
-1853,CSTB2409,14406010,CW,HSX,,,,
-1854,CSTB2408,14406045,CW,HSX,,,,
+1853,CSTB2409,14406010,CW,HSX,CSTB2409 - Covered warrant,CSTB2409 - Covered warrant,CSTB2409 - Chứng quyền,CSTB2409 - Chứng quyền
+1854,CSTB2408,14406045,CW,HSX,CSTB2408 - Covered warrant,CSTB2408 - Covered warrant,CSTB2408 - Chứng quyền,CSTB2408 - Chứng quyền
 1855,CSTB2407,13880671,CW,HSX,CSTB2407 - Covered warrant,CSTB2407 - Covered warrant,CSTB2407 - Chứng quyền,CSTB2407 - Chứng quyền
 1856,CSTB2406,13880667,CW,DELISTED,CSTB2406 - Covered warrant,CSTB2406 - Covered warrant,CSTB2406 - Chứng quyền,CSTB2406 - Chứng quyền
 1857,CSTB2405,13880759,CW,DELISTED,CSTB2405 - Covered warrant,CSTB2405 - Covered warrant,CSTB2405 - Chứng quyền,CSTB2405 - Chứng quyền
@@ -2009,8 +2009,8 @@
 2007,CNA,8425102,STOCK,UPCOM,Nghe An Tea Corporation Joint Stock Company,Nghe An Tea Corporation,Tổng công ty Chè Nghệ An - CTCP,Công ty Cổ phần Tổng công ty Chè Nghệ An
 2008,CMX123035,13934942,BOND,BOND,CMX123035 - Bond,CMX123035 - Bond,CMX123035 - Trái phiếu,CMX123035 - Trái phiếu
 2009,CMX,8424724,STOCK,HSX,CAMIMEX Group Joint Stock Company,CAMIMEX Group,CAMIMEX Group,Công ty Cổ phần CAMIMEX Group
-2010,CMWG2406,14406003,CW,HSX,,,,
-2011,CMWG2405,14406005,CW,HSX,,,,
+2010,CMWG2406,14406003,CW,HSX,CMWG2406 - Covered warrant,CMWG2406 - Covered warrant,CMWG2406 - Chứng quyền,CMWG2406 - Chứng quyền
+2011,CMWG2405,14406005,CW,HSX,CMWG2405 - Covered warrant,CMWG2405 - Covered warrant,CMWG2405 - Chứng quyền,CMWG2405 - Chứng quyền
 2012,CMWG2404,13880659,CW,DELISTED,CMWG2404 - Covered warrant,CMWG2404 - Covered warrant,CMWG2404 - Chứng quyền,CMWG2404 - Chứng quyền
 2013,CMWG2403,13885788,CW,HSX,CMWG2403 - Covered warrant,CMWG2403 - Covered warrant,CMWG2403 - Chứng quyền,CMWG2403 - Chứng quyền
 2014,CMWG2402,13874831,CW,HSX,CMWG2402 - Covered warrant,CMWG2402 - Covered warrant,CMWG2402 - Chứng quyền,CMWG2402 - Chứng quyền
@@ -2054,8 +2054,8 @@
 2052,CMW,8425489,STOCK,UPCOM,Ca Mau Water Supply Joint Stock Company,Ca Mau Water Supply,Cấp nước Cà Mau,Công ty Cổ phần Cấp nước Cà Mau
 2053,CMV,8424545,STOCK,HSX,Ca Mau Trading Joint Stock Company,Ca Mau Trading,Thương nghiệp Cà Mau,Công ty Cổ phần Thương nghiệp Cà Mau
 2054,CMT,8425387,STOCK,UPCOM,Information and Networking technology Joint stock Company,Information and Networking Technology,CN mạng và Truyền thông,Công ty Cổ phần Công nghệ mạng và Truyền thông
-2055,CMSN2405,14406048,CW,HSX,,,,
-2056,CMSN2404,14406004,CW,HSX,,,,
+2055,CMSN2405,14406048,CW,HSX,CMSN2405 - Covered warrant,CMSN2405 - Covered warrant,CMSN2405 - Chứng quyền,CMSN2405 - Chứng quyền
+2056,CMSN2404,14406004,CW,HSX,CMSN2404 - Covered warrant,CMSN2404 - Covered warrant,CMSN2404 - Chứng quyền,CMSN2404 - Chứng quyền
 2057,CMSN2403,13880658,CW,HSX,CMSN2403 - Covered warrant,CMSN2403 - Covered warrant,CMSN2403 - Chứng quyền,CMSN2403 - Chứng quyền
 2058,CMSN2402,13880689,CW,DELISTED,CMSN2402 - Covered warrant,CMSN2402 - Covered warrant,CMSN2402 - Chứng quyền,CMSN2402 - Chứng quyền
 2059,CMSN2401,13874810,CW,HSX,CMSN2401 - Covered warrant,CMSN2401 - Covered warrant,CMSN2401 - Chứng quyền,CMSN2401 - Chứng quyền
@@ -2105,8 +2105,8 @@
 2103,CMF,8425594,STOCK,UPCOM,Cholimex Food Joint Stock Company,Cholimex food,Thực phẩm Cholimex,Công ty Cổ phần Thực phẩm Cholimex
 2104,CMD,8425225,STOCK,UPCOM,Construction Materials and Interior Decoration Joint Stock Company,CMID,VLXD và Nội thất TP.HCM,Công ty Cổ phần Vật liệu xây dựng và Trang trí nội thất TP Hồ Chí Minh
 2105,CMC,8426164,STOCK,HNX,CMC Investment Joint Stock Company,CMC Investment,Đầu tư CMC,Công ty Cổ phần Đầu tư CMC
-2106,CMBB2406,14406054,CW,HSX,,,,
-2107,CMBB2405,14406033,CW,HSX,,,,
+2106,CMBB2406,14406054,CW,HSX,CMBB2406 - Covered warrant,CMBB2406 - Covered warrant,CMBB2406 - Chứng quyền,CMBB2406 - Chứng quyền
+2107,CMBB2405,14406033,CW,HSX,CMBB2405 - Covered warrant,CMBB2405 - Covered warrant,CMBB2405 - Chứng quyền,CMBB2405 - Chứng quyền
 2108,CMBB2404,13874833,CW,HSX,CMBB2404 - Covered warrant,CMBB2404 - Covered warrant,CMBB2404 - Chứng quyền,CMBB2404 - Chứng quyền
 2109,CMBB2403,13874802,CW,HSX,CMBB2403 - Covered warrant,CMBB2403 - Covered warrant,CMBB2403 - Chứng quyền,CMBB2403 - Chứng quyền
 2110,CMBB2402,13779732,CW,HSX,CMBB2402 - Covered warrant,CMBB2402 - Covered warrant,CMBB2402 - Chứng quyền,CMBB2402 - Chứng quyền
@@ -2184,9 +2184,9 @@
 2182,CIA,8425273,STOCK,HNX,Cam Ranh International Airport Services Joint Stock Company,Cam Ranh International Airport Services,DV Sân Bay Cam Ranh,Công ty Cổ Phần Dịch Vụ Sân Bay Quốc Tế Cam Ranh
 2183,CI5,8425409,STOCK,UPCOM,No.5 Construction Investment Joint Stock Company,Construction Investment No 5,Đầu tư Xây dựng số 5,Công ty Cổ phần Đầu tư Xây dựng số 5
 2184,CHS,8425964,STOCK,UPCOM,Ho Chi Minh City Public Lighting Joint Stock Company,HCMC Public Lighting,Chiếu sáng TPHCM,Công ty Cổ phần Chiếu sáng Công cộng Thành phố Hồ Chí Minh
-2185,CHPG2408,14406022,CW,HSX,,,,
-2186,CHPG2407,14406030,CW,HSX,,,,
-2187,CHPG2406,14406038,CW,HSX,,,,
+2185,CHPG2408,14406022,CW,HSX,CHPG2408 - Covered warrant,CHPG2408 - Covered warrant,CHPG2408 - Chứng quyền,CHPG2408 - Chứng quyền
+2186,CHPG2407,14406030,CW,HSX,CHPG2407 - Covered warrant,CHPG2407 - Covered warrant,CHPG2407 - Chứng quyền,CHPG2407 - Chứng quyền
+2187,CHPG2406,14406038,CW,HSX,CHPG2406 - Covered warrant,CHPG2406 - Covered warrant,CHPG2406 - Chứng quyền,CHPG2406 - Chứng quyền
 2188,CHPG2405,13880683,CW,DELISTED,CHPG2405 - Covered warrant,CHPG2405 - Covered warrant,CHPG2405 - Chứng quyền,CHPG2405 - Chứng quyền
 2189,CHPG2404,13880694,CW,DELISTED,CHPG2404 - Covered warrant,CHPG2404 - Covered warrant,CHPG2404 - Chứng quyền,CHPG2404 - Chứng quyền
 2190,CHPG2403,13874830,CW,HSX,CHPG2403 - Covered warrant,CHPG2403 - Covered warrant,CHPG2403 - Chứng quyền,CHPG2403 - Chứng quyền
@@ -2288,8 +2288,8 @@
 2286,CGV,8425876,STOCK,UPCOM,Vinaceglass Joint Stock Company,Vinaceglass JSC,Vinaceglass JSC,Công ty Cổ phần Vinaceglass
 2287,CGL,8425052,STOCK,DELISTED,Gia Lai Trading Joint Stock Company,Comexim Gia Lai,Thương mại Gia Lai,Công ty Cổ phần Thương mại Gia Lai
 2288,CFV,8425490,STOCK,UPCOM,Thang Loi Coffee Joint Stock Company,TLCF,Cà phê Thắng Lợi,Công ty Cổ phần Cà phê Thắng Lợi
-2289,CFPT2403,14406047,CW,HSX,,,,
-2290,CFPT2402,14406014,CW,HSX,,,,
+2289,CFPT2403,14406047,CW,HSX,CFPT2403 - Covered warrant,CFPT2403 - Covered warrant,CFPT2403 - Chứng quyền,CFPT2403 - Chứng quyền
+2290,CFPT2402,14406014,CW,HSX,CFPT2402 - Covered warrant,CFPT2402 - Covered warrant,CFPT2402 - Chứng quyền,CFPT2402 - Chứng quyền
 2291,CFPT2401,13874801,CW,HSX,CFPT2401 - Covered warrant,CFPT2401 - Covered warrant,CFPT2401 - Chứng quyền,CFPT2401 - Chứng quyền
 2292,CFPT2318,13190881,CW,DELISTED,CFPT2318 - Covered warrant,CFPT2318 - Covered warrant,CFPT2318 - Chứng quyền,CFPT2318 - Chứng quyền
 2293,CFPT2317,13096004,CW,DELISTED,CFPT2317 - Covered warrant,CFPT2317 - Covered warrant,CFPT2317 - Chứng quyền,CFPT2317 - Chứng quyền
@@ -2360,8 +2360,8 @@
 2358,CAN,8426194,STOCK,HNX,Halong Canned Food Joint Stock Corporation,Halong Canfoco,Đồ hộp Hạ Long,Công ty Cổ phần Đồ hộp Hạ Long
 2359,CAG,8425261,STOCK,HNX,An Giang Port Joint Stock Company,An Giang Port,Cảng An Giang,Công ty Cổ phần Cảng An Giang
 2360,CAD,8425152,STOCK,UPCOM,Cadovimex Seafood Import-Export And Processing Joint Stock Company,Cadovimex Seafood,Thủy sản Cadovimex,Công ty Cổ phần Chế biến và Xuất khẩu Thủy sản Cadovimex
-2361,CACB2404,14406024,CW,HSX,,,,
-2362,CACB2403,14406034,CW,HSX,,,,
+2361,CACB2404,14406024,CW,HSX,CACB2404 - Covered warrant,CACB2404 - Covered warrant,CACB2404 - Chứng quyền,CACB2404 - Chứng quyền
+2362,CACB2403,14406034,CW,HSX,CACB2403 - Covered warrant,CACB2403 - Covered warrant,CACB2403 - Chứng quyền,CACB2403 - Chứng quyền
 2363,CACB2402,13880668,CW,DELISTED,CACB2402 - Covered warrant,CACB2402 - Covered warrant,CACB2402 - Chứng quyền,CACB2402 - Chứng quyền
 2364,CACB2401,13319486,CW,DELISTED,CACB2401 - Covered warrant,CACB2401 - Covered warrant,CACB2401 - Chứng quyền,CACB2401 - Chứng quyền
 2365,CACB2307,13095993,CW,DELISTED,CACB2307 - Covered warrant,CACB2307 - Covered warrant,CACB2307 - Chứng quyền,CACB2307 - Chứng quyền

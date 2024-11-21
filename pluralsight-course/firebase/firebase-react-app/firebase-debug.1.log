@@ -1,0 +1,29 @@
+[debug] [2024-11-21T06:40:49.099Z] ----------------------------------------------------------------------
+[debug] [2024-11-21T06:40:49.101Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\0138429\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:channel:deploy tan-doan-firebase-react-preview
+[debug] [2024-11-21T06:40:49.102Z] CLI Version:   13.26.0
+[debug] [2024-11-21T06:40:49.102Z] Platform:      win32
+[debug] [2024-11-21T06:40:49.102Z] Node Version:  v20.10.0
+[debug] [2024-11-21T06:40:49.102Z] Time:          Thu Nov 21 2024 13:40:49 GMT+0700 (Indochina Time)
+[debug] [2024-11-21T06:40:49.102Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-21T06:40:49.167Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-21T06:40:49.168Z] > authorizing via signed-in user (tan.doan@ap.averydennison.com)
+[debug] [2024-11-21T06:40:49.168Z] [iam] checking project msea-project for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-21T06:40:49.169Z] Checked if tokens are valid: true, expires at: 1732174163003
+[debug] [2024-11-21T06:40:49.169Z] Checked if tokens are valid: true, expires at: 1732174163003
+[debug] [2024-11-21T06:40:49.170Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/msea-project:testIamPermissions [none]
+[debug] [2024-11-21T06:40:49.170Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/msea-project:testIamPermissions x-goog-quota-user=projects/msea-project
+[debug] [2024-11-21T06:40:49.170Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/msea-project:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-21T06:40:50.493Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/msea-project:testIamPermissions 200
+[debug] [2024-11-21T06:40:50.493Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/msea-project:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-21T06:40:50.493Z] Checked if tokens are valid: true, expires at: 1732174163003
+[debug] [2024-11-21T06:40:50.493Z] Checked if tokens are valid: true, expires at: 1732174163003
+[debug] [2024-11-21T06:40:50.494Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/msea-project [none]
+[debug] [2024-11-21T06:40:51.336Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/msea-project 200
+[debug] [2024-11-21T06:40:51.337Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/msea-project {"projectId":"msea-project","projectNumber":"842910639353","displayName":"AVY-MSEA-project ","name":"projects/msea-project","resources":{"hostingSite":"msea-project"},"state":"ACTIVE","etag":"1_ef7f4857-be2c-401c-9bd6-46e0f2d155f8"}
+[debug] [2024-11-21T06:40:51.796Z] TypeError: Cannot read properties of undefined (reading 'source')
+    at deploy (C:\Users\0138429\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:56:77)
+    at Command.hostingChannelDeployAction [as actionFn] (C:\Users\0138429\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\hosting-channel-deploy.js:90:51)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: An unexpected error has occurred.
